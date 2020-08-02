@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		04C2239E24D6DABB00C98CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2239C24D6DABB00C98CE2 /* Main.storyboard */; };
 		04C223A024D6DAC200C98CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C2239F24D6DAC200C98CE2 /* Assets.xcassets */; };
 		04C223A324D6DAC200C98CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C223A124D6DAC200C98CE2 /* LaunchScreen.storyboard */; };
+		04C223AF24D6E08900C98CE2 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C223AE24D6E08900C98CE2 /* List.swift */; };
+		04C223B324D7174900C98CE2 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C223B224D7174900C98CE2 /* NoticeCell.swift */; };
+		04C223B524D75DED00C98CE2 /* PostObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C223B424D75DED00C98CE2 /* PostObject.swift */; };
+		71100BB74EFE55C9B528CE04 /* Pods_slcm_MTTN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6CE3C42A000F1EFCEA1B49 /* Pods_slcm_MTTN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		04C2239F24D6DAC200C98CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C223A224D6DAC200C98CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C223A424D6DAC200C98CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C223AE24D6E08900C98CE2 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		04C223B224D7174900C98CE2 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		04C223B424D75DED00C98CE2 /* PostObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostObject.swift; sourceTree = "<group>"; };
+		91988DA17D8C39E2674FC00C /* Pods-slcm_MTTN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slcm_MTTN.debug.xcconfig"; path = "Target Support Files/Pods-slcm_MTTN/Pods-slcm_MTTN.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6CE3C42A000F1EFCEA1B49 /* Pods_slcm_MTTN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_slcm_MTTN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8771EAB5969DBD6DE8AFF41 /* Pods-slcm_MTTN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slcm_MTTN.release.xcconfig"; path = "Target Support Files/Pods-slcm_MTTN/Pods-slcm_MTTN.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71100BB74EFE55C9B528CE04 /* Pods_slcm_MTTN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				04C2239524D6DABB00C98CE2 /* slcm_MTTN */,
 				04C2239424D6DABB00C98CE2 /* Products */,
+				23EDBF705992F1F98108D7A6 /* Pods */,
+				DEEAC2FB576263759FCBF7AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,10 @@
 		04C2239524D6DABB00C98CE2 /* slcm_MTTN */ = {
 			isa = PBXGroup;
 			children = (
+				04C223AA24D6DBC500C98CE2 /* Network */,
+				04C223AD24D6DDB500C98CE2 /* Controller */,
+				04C223AC24D6DDAB00C98CE2 /* View */,
+				04C223AB24D6DDA300C98CE2 /* Model */,
 				04C2239624D6DABB00C98CE2 /* AppDelegate.swift */,
 				04C2239824D6DABB00C98CE2 /* SceneDelegate.swift */,
 				04C2239A24D6DABB00C98CE2 /* ViewController.swift */,
@@ -67,6 +84,54 @@
 			path = slcm_MTTN;
 			sourceTree = "<group>";
 		};
+		04C223AA24D6DBC500C98CE2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04C223AB24D6DDA300C98CE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C223AE24D6E08900C98CE2 /* List.swift */,
+				04C223B424D75DED00C98CE2 /* PostObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04C223AC24D6DDAB00C98CE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C223B224D7174900C98CE2 /* NoticeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C223AD24D6DDB500C98CE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23EDBF705992F1F98108D7A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91988DA17D8C39E2674FC00C /* Pods-slcm_MTTN.debug.xcconfig */,
+				A8771EAB5969DBD6DE8AFF41 /* Pods-slcm_MTTN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DEEAC2FB576263759FCBF7AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B6CE3C42A000F1EFCEA1B49 /* Pods_slcm_MTTN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C223A724D6DAC200C98CE2 /* Build configuration list for PBXNativeTarget "slcm_MTTN" */;
 			buildPhases = (
+				8A894DA53EB35E4419D93BF2 /* [CP] Check Pods Manifest.lock */,
 				04C2238F24D6DABB00C98CE2 /* Sources */,
 				04C2239024D6DABB00C98CE2 /* Frameworks */,
 				04C2239124D6DABB00C98CE2 /* Resources */,
+				AA722265128AEFD61A03C768 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +200,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A894DA53EB35E4419D93BF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-slcm_MTTN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA722265128AEFD61A03C768 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-slcm_MTTN/Pods-slcm_MTTN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-slcm_MTTN/Pods-slcm_MTTN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-slcm_MTTN/Pods-slcm_MTTN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04C2238F24D6DABB00C98CE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04C2239B24D6DABB00C98CE2 /* ViewController.swift in Sources */,
+				04C223AF24D6E08900C98CE2 /* List.swift in Sources */,
+				04C223B524D75DED00C98CE2 /* PostObject.swift in Sources */,
 				04C2239724D6DABB00C98CE2 /* AppDelegate.swift in Sources */,
 				04C2239924D6DABB00C98CE2 /* SceneDelegate.swift in Sources */,
+				04C223B324D7174900C98CE2 /* NoticeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +394,7 @@
 		};
 		04C223A824D6DAC200C98CE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91988DA17D8C39E2674FC00C /* Pods-slcm_MTTN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +412,7 @@
 		};
 		04C223A924D6DAC200C98CE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8771EAB5969DBD6DE8AFF41 /* Pods-slcm_MTTN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
