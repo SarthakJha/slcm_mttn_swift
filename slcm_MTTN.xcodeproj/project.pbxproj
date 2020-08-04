@@ -69,26 +69,17 @@
 		04C2239524D6DABB00C98CE2 /* slcm_MTTN */ = {
 			isa = PBXGroup;
 			children = (
-				04C223AA24D6DBC500C98CE2 /* Network */,
 				04C223AD24D6DDB500C98CE2 /* Controller */,
 				04C223AC24D6DDAB00C98CE2 /* View */,
 				04C223AB24D6DDA300C98CE2 /* Model */,
 				04C2239624D6DABB00C98CE2 /* AppDelegate.swift */,
 				04C2239824D6DABB00C98CE2 /* SceneDelegate.swift */,
-				04C2239A24D6DABB00C98CE2 /* ViewController.swift */,
 				04C2239C24D6DABB00C98CE2 /* Main.storyboard */,
 				04C2239F24D6DAC200C98CE2 /* Assets.xcassets */,
 				04C223A124D6DAC200C98CE2 /* LaunchScreen.storyboard */,
 				04C223A424D6DAC200C98CE2 /* Info.plist */,
 			);
 			path = slcm_MTTN;
-			sourceTree = "<group>";
-		};
-		04C223AA24D6DBC500C98CE2 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		04C223AB24D6DDA300C98CE2 /* Model */ = {
@@ -111,6 +102,7 @@
 		04C223AD24D6DDB500C98CE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04C2239A24D6DABB00C98CE2 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

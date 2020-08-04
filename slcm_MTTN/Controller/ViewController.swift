@@ -64,25 +64,23 @@ class ViewController: UIViewController {
 extension ViewController: hitURL {
     func didTapDownloadButton(index: Int, page: Int) {
         let urlString = "http://127.0.0.1:5000/getpdf"
-        let postObject = PostObject(index: index, page: page)
-        let url = URL(string: urlString)
-        var postRequest = URLRequest(url: url!)
+//        let stringifiedIndex = String(index)
+        let stringifiedPage = String(page)
         
-        postRequest.httpMethod = "POST"
-        postRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        do {
-            print("post request sent")
-            postRequest.httpBody = try JSONEncoder().encode(postObject)
-        } catch {
-            print(error.localizedDescription)
+        let changedIndex = index - ((page-1)*10)
+        let stringifiedChangedIndex = String(changedIndex)
+        
+        let filenameRoute = "\(urlString)/\(stringifiedPage)/\(stringifiedChangedIndex).pdf"
+        print(filenameRoute)
+        
+//        let postObject = PostObject(index: index, page: page)
+        let url = URL(string: filenameRoute)
+//        print(url)
+        if url != nil {
+        UIApplication.shared.open(url!)
+        } else {
+            print("url is nil")
         }
-        
-        let dataTask = URLSession.shared.dataTask(with: postRequest) { (data, response, error) in
-            print(data!)
-        }
-        dataTask.resume()
-        
-        
     }
     
     
